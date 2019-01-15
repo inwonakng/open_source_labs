@@ -4,4 +4,4 @@ Screenshot of my tree
 ![tree](treeview.PNG)
 
 Screenshot of regex tutorial(got to question 8)
-![regex](regex.png)
+![regex](regex.PNG)
