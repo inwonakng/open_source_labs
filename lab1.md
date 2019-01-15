@@ -1,0 +1,1 @@
+Reading those articles, I learned about the possible blowbacks to writing software that's open for everybody's use. It was an interesting story because I also go to RPI, and to find out that someone who is in a similar place to mine was able to achieve so much is very impressive.
