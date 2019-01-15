@@ -2,3 +2,6 @@ Reading the chapter about Jesse, I learned about the possible blowbacks to writi
 
 Screenshot of my tree
 ![tree](treeview.PNG)
+
+Screenshot of regex tutorial(got to question 8)
+![regex](regex.png)
