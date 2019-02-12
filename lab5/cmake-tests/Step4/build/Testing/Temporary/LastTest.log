@@ -1,0 +1,122 @@
+Start testing: Feb 12 13:49 EST
+----------------------------------------------------------
+1/5 Testing: Runs
+1/5 Test: Runs
+Command: "/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build/Tutorial" "25"
+Directory: /home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build
+"Runs" start time: Feb 12 13:49 EST
+Output:
+----------------------------------------------------------
+Computing sqrt of 25 to be 13
+Computing sqrt of 25 to be 7.46154
+Computing sqrt of 25 to be 5.40603
+Computing sqrt of 25 to be 5.01525
+Computing sqrt of 25 to be 5.00002
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+The square root of 25 is 5
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Runs" end time: Feb 12 13:49 EST
+"Runs" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: Usage
+2/5 Test: Usage
+Command: "/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build/Tutorial"
+Directory: /home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build
+"Usage" start time: Feb 12 13:49 EST
+Output:
+----------------------------------------------------------
+/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build/Tutorial Version 1.1
+Usage: /home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build/Tutorial number
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[Usage:.*number
+]
+"Usage" end time: Feb 12 13:49 EST
+"Usage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: Comp25
+3/5 Test: Comp25
+Command: "/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build/Tutorial" "25"
+Directory: /home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build
+"Comp25" start time: Feb 12 13:49 EST
+Output:
+----------------------------------------------------------
+Computing sqrt of 25 to be 13
+Computing sqrt of 25 to be 7.46154
+Computing sqrt of 25 to be 5.40603
+Computing sqrt of 25 to be 5.01525
+Computing sqrt of 25 to be 5.00002
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+The square root of 25 is 5
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[25 is 5
+]
+"Comp25" end time: Feb 12 13:49 EST
+"Comp25" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: Comp-25
+4/5 Test: Comp-25
+Command: "/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build/Tutorial" "-25"
+Directory: /home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build
+"Comp-25" start time: Feb 12 13:49 EST
+Output:
+----------------------------------------------------------
+The square root of -25 is 0
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[-25 is [-nan|nan|0]
+]
+"Comp-25" end time: Feb 12 13:49 EST
+"Comp-25" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: Comp0.0001
+5/5 Test: Comp0.0001
+Command: "/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build/Tutorial" "0.0001"
+Directory: /home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/build
+"Comp0.0001" start time: Feb 12 13:49 EST
+Output:
+----------------------------------------------------------
+Computing sqrt of 0.0001 to be 0.50005
+Computing sqrt of 0.0001 to be 0.250125
+Computing sqrt of 0.0001 to be 0.125262
+Computing sqrt of 0.0001 to be 0.0630304
+Computing sqrt of 0.0001 to be 0.0323084
+Computing sqrt of 0.0001 to be 0.0177018
+Computing sqrt of 0.0001 to be 0.0116755
+Computing sqrt of 0.0001 to be 0.0101202
+Computing sqrt of 0.0001 to be 0.0100007
+Computing sqrt of 0.0001 to be 0.01
+The square root of 0.0001 is 0.01
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Pass Reason:
+Required regular expression found.Regex=[0.0001 is 0.01
+]
+"Comp0.0001" end time: Feb 12 13:49 EST
+"Comp0.0001" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 12 13:49 EST

@@ -1,0 +1,3 @@
+/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step1/build/CMakeFiles/rebuild_cache.dir
+/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step1/build/CMakeFiles/Tutorial.dir
+/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step1/build/CMakeFiles/edit_cache.dir

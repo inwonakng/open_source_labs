@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../MathFunctions/MathFunctions.h
+
+/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/tutorial.cxx
+cmath
+-
+iostream
+-
+string
+-
+TutorialConfig.h
+/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/TutorialConfig.h
+MathFunctions.h
+/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/cmake-tests/Step4/MathFunctions.h
+
+TutorialConfig.h
+
