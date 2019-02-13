@@ -17,6 +17,13 @@ size of dynamic and static:
 ![c](images/lab5/static.png)
 ![c](images/lab5/dynamic.png)
 
+#### Output of Static  
+![c](images/lab5/static_output.png)
+
+
+#### Output of Dynamic
+![c](images/lab5/dynamic_output.png)
+
 My Makefile:
 ```make
 all:static_block dynamic_block
