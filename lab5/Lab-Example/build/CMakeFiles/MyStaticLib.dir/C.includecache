@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/Lab-Example/headers/block.h
+
+/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/Lab-Example/source/block.c
+stdio.h
+-
+string.h
+-
+../headers/block.h
+/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/Lab-Example/headers/block.h
+

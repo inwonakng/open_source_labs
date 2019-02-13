@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libMyDynaLib.so -o libMyDynaLib.so CMakeFiles/MyDynaLib.dir/block.c.o 

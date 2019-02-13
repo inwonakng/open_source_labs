@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/static.dir/home/inwon/google-drive/SCHOOL/Sophomore/Spring/opensource/open_source_labs/lab5/Lab-Example/program.c.o  -o static libMyStaticLib.a 

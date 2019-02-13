@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMyStaticLib.a  CMakeFiles/MyStaticLib.dir/block.c.o
+/usr/bin/ranlib libMyStaticLib.a

@@ -1,19 +1,12 @@
-CC=gcc
-CFLAGS=-c -Wall
-
 all:static_block dynamic_block
 
 static_block:program.o libstatic.a
-	cc -o static_block program.o -L. -lstatic
-
+	cc -lm -o static_block program.o libstatic.a -L. -lstatic
 dynamic_block:program.o libdynamic.so
 	cc program.o libdynamic.so -o dynamic_block -Wl,-rpath='$$ORIGIN'
 
 program.o:program.c headers/block.h
-	cc $(CFLAGS) program.c
-
-block.o:source/block.c headers/block.h
-	cc -fPIC -c source/block.c
+	cc -O -c program.c
 
 libstatic.a:block.o
 	ar rcs libstatic.a block.o
@@ -21,7 +14,7 @@ libstatic.a:block.o
 libdynamic.so:block.o
 	cc -shared -o libdynamic.so block.o
 
-lib:libstatic.a libdynamic.so
+block.o:source/block.c headers/block.h
+	cc -O -c source/block.c
 
-clean:
-	rm -f static_block *.o *.a *.gch *.so
+lib:libdynamic.so libstatic.a
