@@ -40,17 +40,12 @@ def generate_graph(words):
     G = nx.Graph(name="words")
     lookup = dict((c, lowercase.index(c)) for c in lowercase)
 
-    def edit_distance_one(word):
-        for i in range(len(word)):
-            left, c, right = word[0:i], word[i], word[i + 1:]
-            j = lookup[c]  # lowercase.index(c)
-            for cc in lowercase[j + 1:]:
-                yield left + cc + right
-    candgen = ((word, cand) for word in sorted(words)
-               for cand in edit_distance_one(word) if cand in words)
-    G.add_nodes_from(words)
-    for word, cand in candgen:
-        G.add_edge(word, cand)
+    for i in words:
+        for j in words:
+            if i is j:
+                break
+            elif len(set(i).intersection(set(j))) is 4:
+                G.add_edge(i,j)
     return G
 
 
@@ -70,7 +65,7 @@ def words_graph():
 if __name__ == '__main__':
     G = words_graph()
     print("Loaded words_dat.txt containing 5757 five-letter English words.")
-    print("Two words are connected if they differ in one letter.")
+    print("Two words are connected if they differ in one letter, regardless of the order of characters")
     print("Graph has %d nodes with %d edges"
           % (nx.number_of_nodes(G), nx.number_of_edges(G)))
     print("%d connected components" % nx.number_connected_components(G))

@@ -131,4 +131,94 @@ hate
 
 #### Code for the unordered solution:
 
+```py
+import gzip
+from string import ascii_lowercase as lowercase
+
+import networkx as nx
+
+#-------------------------------------------------------------------
+#   The Words/Ladder graph of Section 1.1
+#-------------------------------------------------------------------
+
+
+def generate_graph(words):
+    G = nx.Graph(name="words")
+    lookup = dict((c, lowercase.index(c)) for c in lowercase)
+
+    for i in words:
+        for j in words:
+            if i is j:
+                break
+            elif len(set(i).intersection(set(j))) is 4:
+                G.add_edge(i,j)
+    return G
+
+
+def words_graph():
+    """Return the words example graph from the Stanford GraphBase"""
+    fh = gzip.open('words_dat.txt.gz', 'r')
+    words = set()
+    for line in fh.readlines():
+        line = line.decode()
+        if line.startswith('*'):
+            continue
+        w = str(line[0:5])
+        words.add(w)
+    return generate_graph(words)
+
+
+if __name__ == '__main__':
+    G = words_graph()
+    print("Loaded words_dat.txt containing 5757 five-letter English words.")
+    print("Two words are connected if they differ in one letter, regardless of the order of characters")
+    print("Graph has %d nodes with %d edges"
+          % (nx.number_of_nodes(G), nx.number_of_edges(G)))
+    print("%d connected components" % nx.number_connected_components(G))
+
+    for (source, target) in [('chaos', 'order'),
+                             ('nodes', 'graph'),
+                             ('moron', 'smart'),
+                             ('pound', 'marks')]:
+        print("Shortest path between %s and %s is" % (source, target))
+        try:
+            sp = nx.shortest_path(G, source, target)
+            for n in sp:
+                print(n)
+        except nx.NetworkXNoPath:
+            print("None")
+```
+
+
 #### Results for the 4 five letter pairs using the unordered solution: 
+```
+Loaded words_dat.txt containing 5757 five-letter English words.
+Two words are connected if they differ in one letter, regardless of the order of characters
+Graph has 5465 nodes with 97668 edges
+5 connected components
+Shortest path between chaos and order is
+chaos
+echos
+chore
+coder
+order
+Shortest path between nodes and graph is
+nodes
+dopes
+poser
+apers
+grape
+graph
+Shortest path between moron and smart is
+moron
+manor
+roams
+smart
+Shortest path between pound and marks is
+pound
+sound
+modus
+drums
+murks
+marks
+```
