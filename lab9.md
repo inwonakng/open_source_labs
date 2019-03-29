@@ -22,3 +22,5 @@ Screenshot of running the server
 
 Screenshot of server running  
 ![c](images/lab9/ex03_01.PNG)
+
+I couldn't get example 4 to build properly, going to try again later.
