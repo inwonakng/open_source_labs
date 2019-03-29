@@ -10,3 +10,7 @@ Screenshot of test file with vim
 
 Screenshot of cowsay "moo!"  
 ![example 01](images/lab9/ex01_01.PNG)
+
+#### Screenshot of example 02
+
+![c](images/lab9/ex02.PNG)
