@@ -18,7 +18,7 @@ Screenshot of cowsay "moo!"
 #### Screenshots of example 03
 
 Screenshot of running the server  
-![c](images/lab09/ex03_00.PNG)
+![c](images/lab9/ex03_00.PNG)
 
 Screenshot of server running  
-![c](images/lab09/ex03_01.PNG)
+![c](images/lab9/ex03_01.PNG)
